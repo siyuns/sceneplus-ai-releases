@@ -3,7 +3,28 @@
 ScenePlus ai 설치 파일과 업데이트를 배포하는 저장소입니다.
 개발 프로젝트나 서명 개인키를 올리는 저장소가 아닙니다.
 
-[다운로드](#다운로드--2830) · [처음 설치하기](#처음-설치하기) · [업데이트](#기존-보호판-업데이트) · [개발 이야기](#autoplus에서-sceneplus-ai까지) · [시간·토큰 집계](#개발-시간과-토큰-집계)
+[최신 베타](#최신-베타--313-beta-1) · [기존 안정판](#다운로드--2830) · [처음 설치하기](#처음-설치하기) · [업데이트](#기존-보호판-업데이트) · [개발 이야기](#autoplus에서-sceneplus-ai까지) · [시간·토큰 집계](#개발-시간과-토큰-집계)
+
+## 최신 베타 — 3.1.3 beta 1
+
+**새 베타를 사용하려면 아래 3.1.3 설치 파일을 받으세요.** 프로그램과 확장에는 `3.1.3`으로 표시됩니다.
+기존 안정판 2.8.30은 아래에 별도로 유지합니다.
+
+| 운영체제 | 베타 설치 파일 | 크기 |
+| --- | --- | ---: |
+| Windows 10/11 x64 | [3.1.3 Windows 다운로드](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/ScenePlusAI-3.1.3-r2-windows-x64.exe) | 약 543MB |
+| Apple Silicon Mac · macOS 26.0 이상 | [3.1.3 Mac 다운로드](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/ScenePlusAI-3.1.3-r2-mac-arm64.pkg) | 약 533MB |
+
+[베타 변경 내용·전체 첨부 파일](https://github.com/siyuns/sceneplus-ai-releases/releases/tag/v3.1.3-beta1) ·
+[베타 설치 안내](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/INSTALL-KO.txt) ·
+[SHA-256 체크섬](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/SHA256SUMS.txt) ·
+[외부 구성요소 고지](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/ScenePlusAI-3.1.3-beta1-third-party-notices.zip)
+
+- **확인됨:** 사용자 Windows PC의 설치, 확장·엔진 3.1.3 연결, 재부팅 후 연결. 자동 테스트 974개 통과, 기존 Windows 전용 검사 2개 제외.
+- **미확인:** 실제 제작·업로드 전체 흐름, 기존 버전 업데이트의 데이터 보존, Mac 실제 설치·재부팅.
+- **베타 변경:** 장면 수정 시 누끼 이미지 연결 보존, 배경 제외 프롬프트 검증 수정, Flow 제작·다운로드 연결 실패 재시도 개선.
+- Windows 인증서 서명과 Mac Developer ID 서명·공증은 없습니다. 내부 릴리스 서명과는 별개입니다.
+- 재배포 감사는 완료되지 않았습니다. 확보한 고지·소스와 미확정 항목은 [자료 확인 상태](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/THIRD-PARTY-STATUS.txt) 및 베타 릴리스 안내에 공개했습니다.
 
 ## 다운로드 — 2.8.30
 
@@ -35,6 +56,7 @@ Mac 빌드의 최소 macOS 버전은 26.0입니다.
 1. EXE를 실행해 설치합니다.
 2. 처음 설치하는 경우에만 **Fresh install**을 선택합니다.
 3. 시작 메뉴의 **Open extension folder**로 확장 폴더를 확인합니다.
+4. **Engine status**에서 실행 상태와 받은 설치판의 버전을 확인합니다. 베타는 `3.1.3`입니다.
 
 ### Mac
 
@@ -47,9 +69,9 @@ Mac 빌드의 최소 macOS 버전은 26.0입니다.
 
 ### Chrome 확장 연결
 
-1. `chrome://extensions`에서 개발자 모드를 켭니다.
-2. **압축해제된 확장 프로그램 로드**로 위에서 확인한 확장 폴더를 등록합니다.
-3. 확장 설정에서 엔진과 확장 버전이 2.8.30으로 연결되는지 확인합니다.
+1. 신규 설치는 `chrome://extensions`에서 개발자 모드를 켭니다.
+2. **압축해제된 확장 프로그램 로드**로 위에서 확인한 확장 폴더를 등록합니다. 기존 확장이 있으면 삭제하지 말고 새로고침합니다.
+3. TubeWorker 탭을 새로고침하고 엔진과 확장이 같은 버전으로 연결되는지 확인합니다. **베타는 3.1.3, 기존 안정판은 2.8.30**입니다.
 
 ## 기존 보호판 업데이트
 
@@ -58,7 +80,16 @@ Mac 빌드의 최소 macOS 버전은 26.0입니다.
 - Chrome에서 기존 확장 카드의 새로고침을 누릅니다. 삭제·재등록하지 않습니다.
 - 열려 있는 TubeWorker·Flow·Grok 탭도 새로고침합니다.
 
-지원 범위는 신규 설치와 보호판 **2.8.29 이상에서의 업데이트**입니다.
+**3.1.3 베타의 설치·업데이트 허용 범위**
+
+| 대상 | 허용 범위 |
+| --- | --- |
+| Windows | 신규 설치, 공개판 **2.8.30 / 2.9.1**에서 업데이트 |
+| Mac | 신규 설치, 내부 서명이 일치하는 **2.8.29 / 2.8.30, 2.9.0 / 2.9.1, 3.0.0~3.0.4, 3.1.0~3.1.2** 보호판에서 업데이트 |
+
+이는 설치 파일의 버전·서명 허용 범위이며, 모든 경로의 실기 업데이트 검증이 끝났다는 뜻은 아닙니다.
+다른 서명키를 사용한 Windows **3.1.0/3.1.1 시험판은 업데이트 대상이 아닙니다.**
+기존 안정판 2.8.30을 사용할 때는 해당 [릴리스의 안내](https://github.com/siyuns/sceneplus-ai-releases/releases/tag/v2.8.30)를 따르세요.
 기존 2.8.28에서 보호판으로 처음 전환하는 용도는 아닙니다.
 오류가 나면 사용자 데이터·설치 기록을 지우지 말고 오류 문구를 전달하세요.
 

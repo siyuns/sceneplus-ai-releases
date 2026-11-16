@@ -15,6 +15,13 @@ ScenePlus ai 설치 파일과 업데이트를 배포하는 저장소입니다.
 | Windows 10/11 x64 | [3.1.3 Windows 다운로드](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/ScenePlusAI-3.1.3-r2-windows-x64.exe) | 약 543MB |
 | Apple Silicon Mac · macOS 26.0 이상 | [3.1.3 Mac 다운로드](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/ScenePlusAI-3.1.3-r2-mac-arm64.pkg) | 약 533MB |
 
+**3.1.3 베타 다운로드 횟수**
+
+![Windows 3.1.3 다운로드 횟수](https://img.shields.io/github/downloads/siyuns/sceneplus-ai-releases/v3.1.3-beta1/ScenePlusAI-3.1.3-r2-windows-x64.exe?label=Windows%203.1.3%20downloads)
+![Mac 3.1.3 다운로드 횟수](https://img.shields.io/github/downloads/siyuns/sceneplus-ai-releases/v3.1.3-beta1/ScenePlusAI-3.1.3-r2-mac-arm64.pkg?label=Mac%203.1.3%20downloads)
+
+베타 설치 파일별 다운로드 횟수이며 사용자 수·설치 완료 수는 아닙니다. 배지 갱신에는 시간이 걸릴 수 있습니다.
+
 [베타 변경 내용·전체 첨부 파일](https://github.com/siyuns/sceneplus-ai-releases/releases/tag/v3.1.3-beta1) ·
 [베타 설치 안내](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/INSTALL-KO.txt) ·
 [SHA-256 체크섬](https://github.com/siyuns/sceneplus-ai-releases/releases/download/v3.1.3-beta1/SHA256SUMS.txt) ·
